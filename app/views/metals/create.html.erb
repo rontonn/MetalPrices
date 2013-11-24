@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link type="text/css" href="/assets/metals.css.scss" rel="stylesheet" >
+</head>
+<body>
+<div>
+    <h1>Prices on Metals</h1>
+     
+     <div class="table table-hover">
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+     
+          <% @metal.each do |i| %>
+          <tr>
+              <td><%= i.date %></td>
+              <td><%= i.name %></td>
+              <td><%= i.price %></td>
+          </tr>
+          <% end %>
+        </table>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<div class = "extra">
+<SCRIPT LANGUAGE="JavaScript" src="http://metal4u.ru/lme_utf8.js"> </SCRIPT>
+</div>
+</body>
+</html>

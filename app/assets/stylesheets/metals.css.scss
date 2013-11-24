@@ -1,0 +1,28 @@
+// Place all the styles related to the metals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+@import "bootstrap/theme";
+body {
+	background:url("/assets/mooning.png") #fff;
+}
+
+div {
+	text-align:center;
+
+}
+
+div .table {
+	position: absolute;
+	left: 52em;
+	text-align:center;
+}
+
+div .extra {
+	position: relative;
+	left: 20em;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 0;
+
+}

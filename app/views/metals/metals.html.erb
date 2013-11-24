@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link type="text/css" href="app\assets\stylesheets\homepage.css.scss" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+  <link href="app\assets\bootstrap-3.0.0\dist\css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+	<h1>WebParser for Iphone games!</h1>
+
+	<div id="games">
+	<p>
+  		The pre-defined algorithm will  be launched if you press the button below.
+	</p>
+
+ 	<%= form_for :metal, url: metals_path do |f| %>
+
+    <p>
+      	<%= f.submit "Get prices on Metals", class: "btn btn-primary" %>
+   	</p>
+  	<% end %>
+  	</div>
+
+    <div class="license">
+        <h3>
+        <%= link_to "Back to Homepage!", home_path, class: "btn-custom btn-small btn-primary" %>
+        </h3>
+    </div>
+
+<script src="app\assets\bootstrap-3.0.0\dist\js\bootstrap.min.js"></script>
+</body>
+</html>

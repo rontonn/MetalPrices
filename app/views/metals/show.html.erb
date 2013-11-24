@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link type="text/css" href="/assets/metals.css.scss" rel="stylesheet" >
+</head>
+<body>
+<div>
+    <p>
+      <strong>Date:</strong>
+      <%= @metal.date %>
+    </p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @metal.name %>
+    </p>
+
+    <p>
+      <strong>Price:</strong>
+      <%= @metal.price %>
+    </p>
+
+    <p>
+    <%= link_to "Back to the HomePage", home_path, class: "btn btn-primary" %>
+    </p>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<div class = "extra">
+<SCRIPT LANGUAGE="JavaScript" src="http://metal4u.ru/lme_utf8.js"> </SCRIPT>
+</div>
+</body>
+</html>

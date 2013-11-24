@@ -1,0 +1,2 @@
+module MetalGroupsHelper
+end
