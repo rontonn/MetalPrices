@@ -1,2 +1,0 @@
-class MetalGroupsController < ApplicationController
-end

@@ -3,11 +3,9 @@ Metals::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :metals
-  resources :metal_groups
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'metals#home'
-  match '/metals',   to: 'metal_groups#metals',   via: 'get'
   match '/home',   to: 'metals#home',   via: 'get'
 
   # Example of regular route:
