@@ -4,6 +4,7 @@ class CreateMetals < ActiveRecord::Migration
     	t.text :date
       	t.string :name
       	t.string :price
+      	t.text :yandexprice
 
       t.timestamps
     end

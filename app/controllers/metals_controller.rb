@@ -13,14 +13,18 @@ require 'open-uri'
 		regex2 = /\s+/
 
 		page_url = "http://www.lme.com/"
+		
 		page = Nokogiri::HTML(open(page_url))
+		
 
 		@metal.date = Time.new.strftime("%Y-%m-%d %H:%M:%S") + ": data from LME"
+		
 		@metal.save
 		for i in 0..10 do
 		@metal = Metal.new(params[:metal])
 		@metal.name = page.css("table#MD_current_official_prices_aluminium tbody tr th a")[i].text
 		@metal.price = page.css("table#MD_current_official_prices_aluminium tbody tr td")[i].text
+
 		if (@metal.name == "Copper")
 			@metal.name += "(Медь)"
 		end

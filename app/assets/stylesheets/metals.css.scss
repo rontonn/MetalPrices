@@ -13,8 +13,8 @@ div {
 }
 
 div .table {
-	position: absolute;
-	left: 52em;
+	position: relative;
+	left: 50em;
 	text-align:center;
 }
 
@@ -25,4 +25,9 @@ div .extra {
 	padding: 10px;
 	margin: 0;
 
+}
+
+#homebutton {
+	position:absolute;
+	left: 61em;
 }

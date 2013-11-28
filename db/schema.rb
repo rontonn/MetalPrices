@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20131124095904) do
     t.text     "date"
     t.string   "name"
     t.string   "price"
+    t.text     "yandexprice"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

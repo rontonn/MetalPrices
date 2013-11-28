@@ -13,7 +13,8 @@
           <tr>
             <th>Date</th>
             <th>Name</th>
-            <th>Price</th>
+            <th>LME-Price</th>
+            <th>Yandex-Price</th>
           </tr>
      
           <% @metal.each do |i| %>
@@ -25,9 +26,10 @@
           <% end %>
         </table>
 </div>
+
+    <p>
+    <%= link_to "Back to the HomePage", home_path, class: "btn btn-primary" %>
+    </p>
 <script src="https://code.jquery.com/jquery.js"></script>
-<div class = "extra">
-<SCRIPT LANGUAGE="JavaScript" src="http://metal4u.ru/lme_utf8.js"> </SCRIPT>
-</div>
 </body>
 </html>
